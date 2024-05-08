@@ -4,11 +4,11 @@ PROGRAM ANTS
     Real*8 :: x, mu
     Integer :: n_end, n
 
-    open(1, FILE="ants.dat")
+    open(1, FILE="ants_mu33.dat")
 
     x = 0.75
-    mu = 0.4
-    n_end = 100
+    mu = 3.3
+    n_end = 10000
 
     do n = 1, n_end, 1
         x = mu * x * (1. - x)
