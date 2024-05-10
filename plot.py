@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x, n = np.loadtxt("ants.dat", unpack=True)
-plt.plot(x, n)
+x, mu = np.loadtxt("chaos.dat", unpack=True)
+plt.scatter(mu, x, s=1)
 plt.show()
